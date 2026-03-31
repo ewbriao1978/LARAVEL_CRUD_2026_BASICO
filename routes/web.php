@@ -8,3 +8,5 @@ Route::get('/produtos', [MeuController::class, 'mostraProdutos']);
 Route::get('/formulario', [MeuController::class, 'mostraFormulario']);
 Route::post('/formulario', [MeuController::class, 'processaFormulario']);
 Route::delete('/produtos_remover/{id_excluir}', [MeuController::class, 'deletaProduto']);
+Route::get('/produtos_editar/{id_editar}', [MeuController::class, 'mostraFormularioEditar']);
+Route::put('/formulario/{id_para_atualizar}', [MeuController::class, 'atualizaUsuario']);
